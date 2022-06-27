@@ -1,13 +1,13 @@
 ###############################
 ### Java
 ###############################
-#.mtj.tmp/
-#*.class
-#*.jar
-#*.war
-#*.ear
-#*.nar
-#hs_err_pid*
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
 #
 ###############################
 ### Maven
@@ -27,22 +27,22 @@
 ###############################
 ### Gradle
 ###############################
-#bin/
-#build/
-#.gradle
-#.gradletasknamecache
-#gradle-app.setting
-#!gradle-wrapper.jar
+bin/
+build/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
 #
 ###############################
 ### IntelliJ
 ###############################
-#out/
-#.idea/
-#.idea_modules/
-#*.iml
-#*.ipr
-#*.iws
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
 #
 ###############################
 ### Eclipse
@@ -81,4 +81,4 @@
 ###############################
 ### OS X
 ###############################
-#.DS_Store
+.DS_Store
