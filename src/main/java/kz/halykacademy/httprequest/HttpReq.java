@@ -5,13 +5,16 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.Scanner;
 
 public class HttpReq {
     public static void main(String[] args) {
-        String message = """
-                {"name":"John","salary":1000000,"age":"23"}
-                """;
-
+        System.out.println("Enter the name:");
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        String message = String.format("""
+                {"name":"%s", "salary":"1000000", "age":23}
+                """, name);
         HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest httpRequest = HttpRequest.newBuilder(URI.create("https://dummy.restapiexample.com/api/v1/create"))
